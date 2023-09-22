@@ -13,8 +13,8 @@ app.use((ctx) => {
   <body>
      <a href="http://127.0.0.1:8000/nqu/">金門大學</a><br></br>
      <a href="http://127.0.0.1:8000/nqu/csie/">金門大學資工系</a><br></br>
-     <a href="http://127.0.0.1:8000/to/nqu/">金門大學網站</a><br></br>
-     <a href="http://127.0.0.1:8000/to/nqu/csie/">金門大學資工系</a><br></br>
+     <a href="http://127.0.0.1:8000/to/nqu/">go directly to 金門大學網站</a><br></br>
+     <a href="http://127.0.0.1:8000/to/nqu/csie/">go directly to 金門大學資工系</a><br></br>
   </body>
   </html>`
 
