@@ -58,7 +58,12 @@ async function create(ctx) {
     const pairs = await body.value;
     const contactNumber = {};
     for (const [key, value] of pairs) {
-      contactNumber[key] = value;
+      // Assign the value to the correct property
+      if (key === 'contactName') {
+        contactNumber['Name'] = value;
+      } else if (key === 'phoneNumber') {
+        contactNumber[key] = value;
+      }
     }
     console.log('contactNumber=', contactNumber);
     const id = contactNumbers.push(contactNumber) - 1;
@@ -67,6 +72,7 @@ async function create(ctx) {
     ctx.response.redirect('/');
   }
 }
+
 
 console.log('Server run at http://127.0.0.1:8000');
 await app.listen({ port: 8000 });

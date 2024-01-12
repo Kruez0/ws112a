@@ -1,0 +1,112 @@
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+h3{
+  color:#C3C1C1
+}
+#login-error-message {
+  color: red;        /* Sets the text color to red */
+  font-size: 0.8em;
+  font-family: 'Lucida Sans';  /* Sets a smaller font size */
+  margin-top: 10px;  /* Adds some space above the message */
+}
+.bg {
+  position: relative;
+  background-color: #f2f2f2;
+  height: 100%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('ocherry.jpg'); /* Path to your image */
+  background-size: cover; /* Cover the entire viewport */
+  background-position: center; /* Center the image in the viewport */
+  background-repeat: no-repeat; 
+}
+
+.login-container {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 300px;
+}
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column; 
+  }
+h2 {
+  margin-top: 15px;
+  margin-bottom: 20px;
+  font-size: 48px;
+  color: #333;
+}
+input[type="text"],input[type="email"],
+input[type="password"] {
+font-family: 'Bahnschrift Light', 'Arial', sans-serif;
+padding: 18px 30px;
+margin: 5px 0 10px 0; 
+display: inline-block;
+border: 1px solid #ccc;
+box-sizing: border-box;
+border-radius: 5px;
+}
+
+.login-btn {
+    background-color: #D0CECE;
+    color: white;
+    padding: 20px; /* Adjust padding as needed */
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 50px; /* Set a specific size */
+    height: 50px; /* Height must match width for a circle */
+    border-radius: 50%; /* This makes it round */
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 1; /* Ensures text is centered vertically if it's one line */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds a shadow for depth */
+  }
+.back-button {
+  position: absolute;
+  top: 20px; 
+  left: 20px;
+}
+.login-btn:hover {
+  opacity: 0.8;
+}
+.stars {
+  text-align: center;
+  padding: 5px;
+}
+.playfair-display-title {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 1500;
+  font-style: normal;
+}
+p{
+    font-family: 'Segoe UI';
+    text-align:right;
+    font-size: 10px;
+    color: #C3C1C1;
+}
+a {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #000000; 
+    text-decoration: none; 
+    transition: color 0.3s; 
+  }
+  
+  a:hover {
+    color: #ff0000;
+  }
+  

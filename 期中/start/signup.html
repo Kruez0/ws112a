@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign Up Page</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/start/mid.css">
+<script src="/midterm.js"></script>
+</head>
+<body>
+
+<div class="bg">
+    <div class="back-button"><a href="/start/mid.html">
+        <button class="login-btn" type="back"><</button></a>
+    </div>
+    <div class="login-container">
+        <h2 class="playfair-display-title">Sign Up</h2>
+        <form action="/users/signup" method="post" id="signup-form">
+            <input type="text" placeholder="Enter Username" name="username" required>
+            <input type="password" placeholder="Password" name="password" id="password" required minlength="6">
+            <input type="password" placeholder="Confirm Password" name="confirmpassword" id="confirmpassword" required>
+            <div class="button-container">
+                <button class="login-btn" type="submit" value="Sign Up">></button>
+            </div>
+            <div id="password-error" style="color: red; font-family: 'Lucida Sans'; font-size: small;"></div>
+            <div id="signup-error-message" style="color: red; font-family: 'Lucida Sans'; font-size: small;"></div>
+  
+        </form>
+    </div>
+    <script>
+       
+        window.onload = function() {
+          const urlParams = new URLSearchParams(window.location.search);
+          const signupstatus = urlParams.get('signup');
+          if (signupstatus === 'failed') {
+              document.getElementById('signup-error-message').innerText = 'Signup failed. Username has been taken';
+          }
+        };
+ 
+        document.getElementById('signup-form').addEventListener('submit', function(event) {
+            var password = document.getElementById('password').value;
+            var confirmpassword = document.getElementById('confirmpassword').value;
+            var errorMessage = '';
+    
+            if (!password.match(/\d/)) {
+                errorMessage += 'Password must contain at least one number.<br>';
+            }
+            if (password.length < 6) {
+                errorMessage += 'Password must be at least 6 characters long.<br>';
+            }
+            if (password !== confirmpassword) {
+                errorMessage += 'Passwords do not match.<br>';
+            }
+            if (errorMessage) {
+                document.getElementById('password-error').innerHTML = errorMessage;
+                event.preventDefault();
+            }
+        });
+    </script>
+    
+</div>
+</body>
+</html>
