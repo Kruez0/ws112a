@@ -104,7 +104,10 @@ export function layout(title, content) {
             font-size: 1em;
             line-height: 1.6;
         }
-
+        textarea {
+            width: 500px;
+            height: 300px;
+        }
         @media (max-width: 768px) {
             #main-content {
                 width: 95%;

@@ -7,6 +7,10 @@ body, html {
 h3{
   color:#C3C1C1
 }
+textarea {
+  width: 500px;
+  height: 300px;
+}
 #login-error-message {
   color: red;        
   font-size: 0.8em;
@@ -83,10 +87,7 @@ border-radius: 5px;
 .login-btn:hover {
   opacity: 0.8;
 }
-.stars {
-  text-align: center;
-  padding: 5px;
-}
+
 .playfair-display-title {
   font-family: "Playfair Display", serif;
   font-optical-sizing: auto;
