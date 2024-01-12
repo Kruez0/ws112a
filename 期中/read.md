@@ -1,4 +1,6 @@
 # Explanation
+## 自己寫的。如果不懂問chatgpt因為chatgpt很快。我有忘記怎麽做css,event listener.所以我問它但是那個也自己寫其他也自己寫。sorry for the bad chinese
+
 This project was done entirely by me. 
 The first login and sign in is from week 4 homework that i improved and add, the css design was made by me. At first I use ppt to think about the design. 
 ![ppt](https://github.com/ccc112a/ws112a/assets/105598068/6e732c44-2579-4346-87ee-d319fffe7df7)
